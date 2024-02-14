@@ -20,6 +20,7 @@ dependencies:
   google_fonts: ^6.1.0
   cupertino_icons: ^1.0.2
 
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -36,5 +37,6 @@ flutter:
     - assets/images/first-screen.svg
     - assets/images/second-screen.svg
     - assets/images/third-screen.svg
+    - assets/images/google-icon.svg
 
 
