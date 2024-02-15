@@ -73,10 +73,10 @@ class _thirdScreenState extends State<ThirdScreen> {
                     GestureDetector(
                       onTap: () {
                         Navigator.of(context).pushReplacement(MaterialPageRoute(
-                            builder: (context) => FirstScreen()));
+                            builder: (context) => SignUp()));
                       },
                       child: Text(
-                        'Sign in',
+                        'Sign Up',
                         style: TextStyle(color: Color(0xff0560FA)),
                       ),
                     )
