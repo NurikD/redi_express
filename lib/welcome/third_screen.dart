@@ -58,6 +58,7 @@ class _thirdScreenState extends State<ThirdScreen> {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5)),
                           backgroundColor: Color(0xff0560FA),
+                            minimumSize: Size(150, 60)
                         ),
                       ),
                     )),

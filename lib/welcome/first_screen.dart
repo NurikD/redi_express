@@ -17,71 +17,71 @@ class _FirstScreenState extends State<FirstScreen> {
       body: Container(
         child: Center(
             child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            SvgPicture.asset(
-              'assets/images/first-screen.svg',
-              height: 350,
-              width: 350,
-              allowDrawingOutsideViewBox: true,
-            ),
-            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                new DotsIndicator(
-                  position: 0,
-                  dotsCount: 3,
-                  decorator: DotsDecorator(
-                      spacing: const EdgeInsets.all(5.0),
-                      activeColor: Color(0xff0560FA)),
+                SvgPicture.asset(
+                  'assets/images/first-screen.svg',
+                  height: 350,
+                  width: 350,
+                  allowDrawingOutsideViewBox: true,
                 ),
-                Padding(padding: EdgeInsets.only(top: 100)),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                Column(
                   children: [
-                    ElevatedButton(
-                      onPressed: () {
-                        Navigator.pushNamed(context, '/thirdScreen');
-                      },
-                      child: Text(
-                        'Skip',
-                        style: GoogleFonts.roboto(
-                            textStyle: TextStyle(
-                          color: Color(0xff0560FA),
-                          fontWeight: FontWeight.bold,
-                        )),
-                      ),
-                      style: ElevatedButton.styleFrom(
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(5),
-                              side: BorderSide(
-                                  width: 1.0, color: Color(0xff0560FA))),
-                          backgroundColor: Colors.white),
+                    new DotsIndicator(
+                      position: 0,
+                      dotsCount: 3,
+                      decorator: DotsDecorator(
+                          spacing: const EdgeInsets.all(5.0),
+                          activeColor: Color(0xff0560FA)),
                     ),
-                    ElevatedButton(
-                      onPressed: () {
-                        Navigator.pushNamed(context, '/secondScreen');
-                      },
-                      child: Text(
-                        'Next',
-                        style: GoogleFonts.roboto(
-                            textStyle: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                        )),
-                      ),
-                      style: ElevatedButton.styleFrom(
-                          shape: RoundedRectangleBorder(
-                            borderRadius:
-                                BorderRadius.circular(5), // <-- Radius
+                    Padding(padding: EdgeInsets.only(top: 100)),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        ElevatedButton(
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/thirdScreen');
+                          },
+                          child: Text(
+                            'Skip',
+                            style: GoogleFonts.roboto(
+                                textStyle: TextStyle(
+                                  color: Color(0xff0560FA),
+                                  fontWeight: FontWeight.bold,
+                                )),
                           ),
-                          backgroundColor: Color(0xff0560FA)),
-                    ),
+                          style: ElevatedButton.styleFrom(
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(5),
+                                  side: BorderSide(
+                                      width: 1.0, color: Color(0xff0560FA))),
+                              backgroundColor: Colors.white),
+                        ),
+                        ElevatedButton(
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/secondScreen');
+                          },
+                          child: Text(
+                            'Next',
+                            style: GoogleFonts.roboto(
+                                textStyle: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                )),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                              shape: RoundedRectangleBorder(
+                                borderRadius:
+                                BorderRadius.circular(5), // <-- Radius
+                              ),
+                              backgroundColor: Color(0xff0560FA)),
+                        ),
+                      ],
+                    )
                   ],
                 )
               ],
-            )
-          ],
-        )),
+            )),
       ),
     );
   }

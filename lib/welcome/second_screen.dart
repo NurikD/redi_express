@@ -30,11 +30,11 @@ class _secondScreenState extends State<SecondScreen> {
                 new DotsIndicator(
                   position: 1,
                   dotsCount: 3,
-                  decorator: DotsDecorator(
-                      spacing: const EdgeInsets.all(5.0),
+                  decorator: const DotsDecorator(
+                      spacing: EdgeInsets.all(5.0),
                       activeColor: Color(0xff0560FA)),
                 ),
-                Padding(padding: EdgeInsets.only(top: 100)),
+                const Padding(padding: EdgeInsets.only(top: 100)),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
@@ -45,7 +45,7 @@ class _secondScreenState extends State<SecondScreen> {
                       child: Text(
                         'Skip',
                         style: GoogleFonts.roboto(
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                           color: Color(0xff0560FA),
                           fontWeight: FontWeight.bold,
                         )),
@@ -53,7 +53,7 @@ class _secondScreenState extends State<SecondScreen> {
                       style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5),
-                              side: BorderSide(
+                              side: const BorderSide(
                                   width: 1.0, color: Color(0xff0560FA))),
                           backgroundColor: Colors.white),
                     ),
@@ -64,7 +64,7 @@ class _secondScreenState extends State<SecondScreen> {
                       child: Text(
                         'Next',
                         style: GoogleFonts.roboto(
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
                         )),
@@ -74,7 +74,7 @@ class _secondScreenState extends State<SecondScreen> {
                             borderRadius:
                                 BorderRadius.circular(5), // <-- Radius
                           ),
-                          backgroundColor: Color(0xff0560FA)),
+                          backgroundColor: const Color(0xff0560FA)),
                     ),
                   ],
                 )

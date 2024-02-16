@@ -110,7 +110,7 @@ class _SignUpState extends State<SignUp> {
                                   ),
                                   Column(
                                     children: [
-                                      Text(
+                                      const Text(
                                         'By ticking this box, you agree to our ',
                                         style: TextStyle(
                                           fontSize: 12,
@@ -119,7 +119,7 @@ class _SignUpState extends State<SignUp> {
                                       ),
                                       GestureDetector(
                                         onTap: () => launch('https://google.com'),
-                                        child: Text(
+                                        child: const Text(
                                           'Terms and conditions and private policy',
                                           style: TextStyle(
                                             fontSize: 12,
@@ -132,19 +132,20 @@ class _SignUpState extends State<SignUp> {
                                 ],
                               ),
                               SizedBox(
-                                height: MediaQuery.of(context).size.height * 0.05,
+                                height: MediaQuery.of(context).size.height * 0.1  ,
                               ),
                               Container(
                                   width: double.infinity,
                                   child: ElevatedButton(onPressed: (){
                                   },
-                                    child: Text('Sign Up', style: TextStyle(
+                                    child: const Text('Sign Up', style: TextStyle(
                                         color: Colors.white
                                     ),),
                                     style: ElevatedButton.styleFrom(
                                       shape: RoundedRectangleBorder(
                                           borderRadius: BorderRadius.circular(5)),
                                       backgroundColor: const Color(0xff0560FA),
+                                        minimumSize: const Size(150, 60)
                                     ),
                                   )
                               ),
@@ -159,7 +160,7 @@ class _SignUpState extends State<SignUp> {
                                   GestureDetector(
                                     onTap: () {
                                       Navigator.of(context).pushReplacement(MaterialPageRoute(
-                                          builder: (context) => LogIn()));
+                                          builder: (context) => const LogIn()));
                                     },
                                     child: const Text(
                                       'Sign in',
@@ -168,14 +169,14 @@ class _SignUpState extends State<SignUp> {
                                   )
                                 ],
                               ),
-                              Padding(padding: EdgeInsets.only(top: 25)),
+                              const Padding(padding: EdgeInsets.only(top: 25)),
                               Center(
                                   child: Column(
                                     children: [
-                                      Text('or sign in using', style: TextStyle(
+                                      const Text('or sign in using', style: TextStyle(
                                           color: Colors.black45
                                       ),),
-                                      Padding(padding: EdgeInsets.only(top: 5)),
+                                      const Padding(padding: EdgeInsets.only(top: 5)),
                                       SvgPicture.asset('assets/images/google-icon.svg'),
                                     ],
                                   )

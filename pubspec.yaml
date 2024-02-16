@@ -19,6 +19,7 @@ dependencies:
   url_launcher: ^6.2.4
   google_fonts: ^6.1.0
   cupertino_icons: ^1.0.2
+  pinput: ^4.0.0
 
 
 dev_dependencies:

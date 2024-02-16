@@ -26,7 +26,7 @@ class _LogInState extends State<LogIn> {
           ),
           Form(
             child: Padding(
-              padding: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -84,18 +84,19 @@ class _LogInState extends State<LogIn> {
                         keyboardType: TextInputType.visiblePassword,
                       ),
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Checkbox(
-                              value: isChecked,
-                              onChanged: (bool? value) {
-                                setState(() {
-                                  isChecked = value!;
-                                });
-                              },
-                              activeColor: const Color(0xff0560FA)),
-                          Column(
+                          Row(
                             children: [
-                              Text(
+                              Checkbox(
+                                  value: isChecked,
+                                  onChanged: (bool? value) {
+                                    setState(() {
+                                      isChecked = value!;
+                                    });
+                                  },
+                                  activeColor: const Color(0xff0560FA)),
+                              const Text(
                                 'Remember password',
                                 style: TextStyle(
                                   fontSize: 12,
@@ -103,6 +104,16 @@ class _LogInState extends State<LogIn> {
                                 ),
                               ),
                             ],
+                          ),
+                          GestureDetector(
+                            onTap: (){
+                              Navigator.pushReplacementNamed(context, '/forgotPass');
+                            },
+                            child: const Text('Forgot Password?', style: TextStyle(
+                              color: Color(0xff0560FA),
+                              fontWeight: FontWeight.bold
+                            ),
+                          )
                           )
                         ],
                       ),
@@ -113,7 +124,7 @@ class _LogInState extends State<LogIn> {
                           width: double.infinity,
                           child: ElevatedButton(
                             onPressed: () {},
-                            child: Text(
+                            child: const Text(
                               'Log in',
                               style: TextStyle(color: Colors.white),
                             ),
@@ -121,6 +132,7 @@ class _LogInState extends State<LogIn> {
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(5)),
                               backgroundColor: const Color(0xff0560FA),
+                                minimumSize: const Size(150, 60)
                             ),
                           )),
                       Row(
@@ -133,7 +145,7 @@ class _LogInState extends State<LogIn> {
                           GestureDetector(
                             onTap: () {
                               Navigator.of(context).pushReplacement(MaterialPageRoute(
-                                  builder: (context) => SignUp()));
+                                  builder: (context) => const SignUp()));
                             },
                             child: const Text(
                               'Sign Up',
@@ -142,15 +154,15 @@ class _LogInState extends State<LogIn> {
                           )
                         ],
                       ),
-                      Padding(padding: EdgeInsets.only(top: 25)),
+                      const Padding(padding: EdgeInsets.only(top: 25)),
                       Center(
                           child: Column(
                             children: [
-                              Text(
+                              const Text(
                                 'or sign in using',
                                 style: TextStyle(color: Colors.black45),
                               ),
-                              Padding(padding: EdgeInsets.only(top: 5)),
+                              const Padding(padding: EdgeInsets.only(top: 5)),
                               SvgPicture.asset('assets/images/google-icon.svg'),
                             ],
                           )),
