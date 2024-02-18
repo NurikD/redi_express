@@ -61,7 +61,9 @@ class _ForgotPassState extends State<ForgotPass> {
                         Container(
                             width: double.infinity,
                             child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.pushNamed(context, '/emailVerification');
+                              },
                               child: const Text(
                                 'Send OTP',
                                 style: TextStyle(color: Colors.white),

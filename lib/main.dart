@@ -7,11 +7,12 @@ import 'package:redi_express/welcome/splash.dart';
 import 'package:redi_express/welcome/third_screen.dart';
 import 'package:redi_express/auth/log_in.dart';
 import 'package:redi_express/auth/forgot_password.dart';
+import 'package:redi_express/auth/new_password.dart';
 
 void main() {
   runApp(const MyApp());
 }
-
+//привет как дела
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const EmailVerification(),
+      home: const NewPass(),
       routes: {
         '/splash': (context) => const SplashScreen(),
         '/firstScreen': (context) => const FirstScreen(),
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         '/logIn': (context) => const LogIn(),
         '/forgotPass': (context) => const ForgotPass(),
         '/emailVerification': (context) => const EmailVerification(),
-
+        '/newPass': (context) => const NewPass(),
       },
     );
   }
