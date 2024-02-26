@@ -21,6 +21,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   pinput: ^4.0.0
   searchfield: ^0.9.2
+  carousel_slider: ^4.2.1
 
 dev_dependencies:
   flutter_test:
@@ -40,5 +41,10 @@ flutter:
     - assets/images/third-screen.svg
     - assets/images/google-icon.svg
     - assets/icons/arrow-square-right.svg
-
+    - assets/images/spec_scroll_img-1.png
+    - assets/images/spec_scroll_img-2.png
+    - assets/images/spec_scroll_img-3.png
+    - assets/images/spec_scroll_img-4.png
+    - assets/images/spec_scroll_img-5.png
+    - assets/icons/call-mam.svg
 
