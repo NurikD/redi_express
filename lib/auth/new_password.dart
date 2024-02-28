@@ -25,7 +25,7 @@ class _NewPassState extends State<NewPass> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Forgot Password',
+                      'New Password',
                       style: GoogleFonts.roboto(
                           textStyle: const TextStyle(
                               fontSize: 30,
@@ -75,7 +75,9 @@ class _NewPassState extends State<NewPass> {
                         Container(
                             width: double.infinity,
                             child: ElevatedButton(
-                              onPressed: () {},
+                                onPressed: () {
+                                  Navigator.pushNamed(context, '/home');
+                              },
                               child: const Text(
                                 'Log in',
                                 style: TextStyle(color: Colors.white),

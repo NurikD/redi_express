@@ -137,6 +137,7 @@ class _SignUpState extends State<SignUp> {
                               Container(
                                   width: double.infinity,
                                   child: ElevatedButton(onPressed: (){
+                                      Navigator.pushNamed(context, '/home');
                                   },
                                     child: const Text('Sign Up', style: TextStyle(
                                         color: Colors.white

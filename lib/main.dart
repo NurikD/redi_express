@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const mainHome(),
+      home: const SplashScreen(),
       routes: {
         '/splash': (context) => const SplashScreen(),
         '/firstScreen': (context) => const FirstScreen(),
@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
         '/forgotPass': (context) => const ForgotPass(),
         '/emailVerification': (context) => const EmailVerification(),
         '/newPass': (context) => const NewPass(),
-        'home': (context) => const mainHome(),
+        '/home': (context) => const mainHome(),
       },
     );
   }

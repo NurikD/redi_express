@@ -85,7 +85,9 @@ class _EmailVerificationState extends State<EmailVerification> {
                     Container(
                         width: double.infinity,
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/newPass');
+                          },
                           child: const Text(
                             'Set New Password',
                             style: TextStyle(color: Colors.white),

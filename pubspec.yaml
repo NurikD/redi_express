@@ -46,5 +46,14 @@ flutter:
     - assets/images/spec_scroll_img-3.png
     - assets/images/spec_scroll_img-4.png
     - assets/images/spec_scroll_img-5.png
-    - assets/icons/call-mam.svg
+    - assets/icons/call-man.svg
+    - assets/icons/pilot.svg
+    - assets/icons/wallet.svg
+    - assets/icons/package.svg
+    - assets/icons/team.svg
+    - assets/icons/car.svg
+    - assets/icons/home.svg
+    - assets/icons/smart-car.svg
+    - assets/icons/wallet-icon.svg
+    - assets/icons/profile-circle.svg
 

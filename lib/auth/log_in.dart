@@ -123,7 +123,9 @@ class _LogInState extends State<LogIn> {
                       Container(
                           width: double.infinity,
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.pushNamed(context, '/home');
+                            },
                             child: const Text(
                               'Log in',
                               style: TextStyle(color: Colors.white),
