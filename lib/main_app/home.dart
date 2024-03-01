@@ -185,7 +185,9 @@ class _mainHomeState extends State<mainHome> {
                     right: 10.0,
                     top: 20,
                     child: IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/notification');
+                      },
                       icon: const Icon(
                         Icons.notifications_none,
                         color: Colors.white,
@@ -247,7 +249,7 @@ class _mainHomeState extends State<mainHome> {
             Text(
               'What would you like to do',
               style: GoogleFonts.roboto(
-                  color: Color(0xff0560FA),
+                  color: const Color(0xff0560FA),
                   fontWeight: FontWeight.bold,
                   fontSize: 15),
             ),
@@ -272,7 +274,7 @@ class _mainHomeState extends State<mainHome> {
                           width: MediaQuery.of(context).size.width / 2 - 16,
                           margin: const EdgeInsets.symmetric(
                               horizontal: 5.0, vertical: 5.0),
-                          padding: EdgeInsets.all(15.0),
+                          padding: const EdgeInsets.all(15.0),
                           height: MediaQuery.of(context).size.height,
                           decoration: BoxDecoration(
                             boxShadow: [
@@ -280,7 +282,7 @@ class _mainHomeState extends State<mainHome> {
                                 color: Colors.grey.withOpacity(0.5),
                                 spreadRadius: 1,
                                 blurRadius: 3,
-                                offset: Offset(0, 3),
+                                offset: const Offset(0, 3),
                               ),
                             ],
                             borderRadius: BorderRadius.circular(10.0),
@@ -293,7 +295,6 @@ class _mainHomeState extends State<mainHome> {
                               Padding(
                                 padding: const EdgeInsets.fromLTRB(
                                     8.0, 12.0, 0.0, 5.0),
-                                // Добавление отступа слева
                                 child: SvgPicture.asset(
                                   currentItem1.imagePath_1,
                                   width: 40.0,
@@ -330,7 +331,7 @@ class _mainHomeState extends State<mainHome> {
                           width: MediaQuery.of(context).size.width / 2 - 16,
                           margin: const EdgeInsets.symmetric(
                               horizontal: 5.0, vertical: 5.0),
-                          padding: EdgeInsets.all(15.0),
+                          padding: const EdgeInsets.all(15.0),
                           height: MediaQuery.of(context).size.height,
                           decoration: BoxDecoration(
                             boxShadow: [
@@ -338,7 +339,7 @@ class _mainHomeState extends State<mainHome> {
                                 color: Colors.grey.withOpacity(0.5),
                                 spreadRadius: 1,
                                 blurRadius: 3,
-                                offset: Offset(0, 3),
+                                offset: const Offset(0, 3),
                               ),
                             ],
                             borderRadius: BorderRadius.circular(10.0),

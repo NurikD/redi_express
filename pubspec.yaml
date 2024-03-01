@@ -56,4 +56,6 @@ flutter:
     - assets/icons/smart-car.svg
     - assets/icons/wallet-icon.svg
     - assets/icons/profile-circle.svg
+    - assets/icons/arrow-square-left.svg
+    - assets/icons/origin.svg
 

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:redi_express/auth/otp_verification.dart';
 import 'package:redi_express/auth/sign_up.dart';
+import 'package:redi_express/track_section/send-package-1.dart';
 import 'package:redi_express/welcome/first_screen.dart';
 import 'package:redi_express/welcome/second_screen.dart';
 import 'package:redi_express/welcome/splash.dart';
@@ -9,7 +10,7 @@ import 'package:redi_express/auth/log_in.dart';
 import 'package:redi_express/auth/forgot_password.dart';
 import 'package:redi_express/auth/new_password.dart';
 import 'package:redi_express/main_app/home.dart';
-
+import 'package:redi_express/main_app/notification.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const SplashScreen(),
+      home: const packageForm(),
       routes: {
         '/splash': (context) => const SplashScreen(),
         '/firstScreen': (context) => const FirstScreen(),
@@ -34,6 +35,8 @@ class MyApp extends StatelessWidget {
         '/emailVerification': (context) => const EmailVerification(),
         '/newPass': (context) => const NewPass(),
         '/home': (context) => const mainHome(),
+        '/notification': (context) => const notificationPage(),
+        '/packageForm': (context) => const packageForm()
       },
     );
   }
